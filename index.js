@@ -80,7 +80,7 @@ function getClassyFromBlockElement(tokens, idx, fullName) {
 
   // if the last token of the inline content is of type "classy"
   // we have to do our thing
-  if (inlineContents[inlineContents.length - 1]){
+  if (inlineContents){
     if (inlineContents[inlineContents.length - 1].type !== "classy") {
       return null;
     }
